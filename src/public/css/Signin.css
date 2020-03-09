@@ -1,0 +1,67 @@
+body{
+  background-image: url(/img/Fondo.jpg);
+  background-size: cover;
+}
+
+a{
+  color: #23CE6B;
+}
+
+p{
+  color: #FFFFFF;
+}
+
+
+
+.card{
+  margin-top: 5%;
+  background-color: rgba(9,82,86,.2) ;
+}
+
+
+
+.card-header{
+  background-color: #0D2818;
+  color: #FFFFFF;
+  opacity: .9;
+
+}
+
+
+.card-footer{
+  background-color: black;
+}
+
+
+.input-group{
+    height: 100px;
+}
+
+.input-group-text{
+  height: 60px;
+  width: 60px;
+  align-content: center;
+}
+
+.form-control{
+  height: 60px;
+  font-size: x-large;
+}
+
+.remember{
+  color: #FFFFFF;
+}
+
+.btn{
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+

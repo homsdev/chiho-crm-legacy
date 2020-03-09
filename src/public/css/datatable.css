@@ -1,0 +1,19 @@
+table{
+
+  color: #FFFFFF;
+}
+
+thead{
+  background-color: #095256;
+  color: #FFFFFF;
+}
+
+tbody{
+  background-color: #23CE6B;
+}
+
+
+div.dataTables_wrapper {
+  width: 1300px;
+  margin: 0 auto;
+}

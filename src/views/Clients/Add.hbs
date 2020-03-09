@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="/css/add_edit.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<div class="row">
+  <div class="col"></div>
+  <div class="col-md-5 p-5">
+    <div class="card">
+      <div class="card-header" style="color: #FFFFFF;">
+        <h4 style="text-align: center;">Añadir Contacto</h4>
+      </div>
+
+      <div class="card-body">
+
+        <form action="/clients/add" method="POST">
+          <div class="input-container">
+            <i class="fas fa-pen icon"></i>
+            <input class="input-field" type="text" placeholder="Ej.Jose Luis Rios" name="name">
+          </div>
+
+          <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text" placeholder="123@" name="email">
+          </div>
+
+          <div class="input-container">
+            <i class="fas fa-phone icon "></i>
+            <input class="input-field" type="text" placeholder="Ej. 555-66-338" name="phone_number">
+          </div>
+          <div class="form-group p-1">
+
+            <select class="custom-select" name="lead_status" >
+              <option selected>Estado del lead</option>
+              <option value="Inicio">Iniciando</option>
+              <option value="En curso">En curso</option>
+              <option value="Finalizado">Finalizado</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn">Crear Contacto</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col"></div>
+</div>

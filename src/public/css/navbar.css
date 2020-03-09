@@ -1,0 +1,29 @@
+nav{
+    background: #020202;
+    color: #FFFFF2;
+}
+
+.navbar-brand{  
+    color: rgb(170, 170, 146);
+    font-size: 3em;
+}
+
+a{
+    color: #23CE6B;
+}
+
+a :hover{
+    color: #FFFFF2;
+}
+
+.nav-item:hover{
+color: #FFFFF2;
+}
+
+.nav-link :hover{
+    color: #FFFFF2;
+}
+
+li:hover{
+    color: #23CE6B;
+}

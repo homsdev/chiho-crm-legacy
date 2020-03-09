@@ -1,0 +1,62 @@
+<link rel="stylesheet" href="/css/datatable.css">
+
+
+<div class="clients_view p-4 ">
+    <table id="view_clients" class="table table-responsive table-striped hover" style="width:100%">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Email</th>
+                <th>Telefono</th>
+                <th>Estado del Lead</th>
+                <th>Ultimo contacto</th>
+                <th>Creado el</th>
+                <th>Notas</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each client}}
+            <tr>
+                <td>{{name}}</td>
+                <td>{{email}}</td>
+                <td>{{phone_number}}</td>
+                <td>{{lead_status}}</td>
+
+                {{#if last_activity}}
+                <td>{{last_activity}}</td>
+
+                {{else}}
+                <td>vacio</td>
+                {{/if}}
+
+                <td>{{created_at}}</td>
+
+
+
+                {{#if notes}}
+                <td>{{notes}}</td>
+
+                {{else}}
+                <td>vacio</td>
+                {{/if}}
+
+
+                <td>
+                    <a class="btn btn-secondary" href="clients/edit/{{client_id}}">
+                        Editar
+                    </a>
+                </td>
+
+                <td>
+                    <a class="btn btn-danger" href="clients/delete/{{client_id}}">
+                        Eliminar
+                    </a>
+                </td>
+
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

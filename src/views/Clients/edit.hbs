@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="/css/add_edit.css">
+
+
+
+<div class="row">
+  <div class="col"></div>
+  <div class="col-md-5 p-5">
+    <div class="card">
+      <div class="card-header" style="color: #FFFFFF;">
+        <h4 style="text-align: center;">Añadir Contacto</h4>
+      </div>
+
+      <div class="card-body">
+
+        <form action="/clients/edit/{{client.client_id}}" method="POST">
+          <div class="input-container">
+            <i class="fas fa-pen icon"></i>
+            <input class="input-field" type="text" placeholder="{{client.name}}" name="name">
+          </div>
+
+          <div class="input-container">
+            <i class="fa fa-envelope icon"></i>
+            <input class="input-field" type="text" placeholder="{{client.email}}" name="email">
+          </div>
+
+          <div class="input-container">
+            <i class="fas fa-phone icon "></i>
+            <input class="input-field" type="text" placeholder="{{client.phone_number}}" name="phone_number">
+          </div>
+          <div class="form-group p-1">
+
+            <select class="custom-select" name="lead_status">
+              <option selected>Estado del lead</option>
+              <option value="Inicio">Iniciando</option>
+              <option value="En curso">En curso</option>
+              <option value="Finalizado">Finalizado</option>
+            </select>
+          </div>
+          <p style="color: #FFFFFF;">Agregue notas para el contacto</p>
+          <textarea class="form-control" name="notes" cols="30" rows="5" style="margin-bottom:10px"></textarea>
+
+          <div class="form-group">
+            <label for="last_activity" style="color: #FFFFFF;">Última Reunión</label>
+            <input type="date" name="last_activity" class="form-control">
+          </div>
+
+          <button type="submit" class="btn">Actualizar</button>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="col"></div>
+</div>
