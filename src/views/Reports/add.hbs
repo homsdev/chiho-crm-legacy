@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Reporte</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<!--<link rel="stylesheet" type="text/css" href="css/util.css">-->
+	<link rel="stylesheet" type="text/css" href="/css/repadd.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+	<div class="Reporte">
+		<div class="container-Reporte">
+			<div class="Reporte-pic js-tilt" data-tilt>
+				<img src="images/img-01.png" alt="IMG">
+			</div>
+
+			<form class="Reporte-form validate-form" method="POST" action="/reports/add">
+				<span class="Reporte-form-title">
+					Reporte
+				</span>
+
+				<div class="wrap-Entrada validate-input" data-validate = "Incidente">
+					<input class="Entrada" type="text" name="incident" placeholder="Incidente">
+					<span class="shadow-Entrada"></span>
+				</div>
+
+				<div class="wrap-Entrada validate-input" data-validate="Estado Requerido">
+					<select class="Entrada" type="text" name="status" placeholder="Estado">
+						<option value="Bien">Bien</option>
+						<option value="Mal">Mal</option>
+						<option value="BienM">BienMal</option>
+					</select>
+					<span class="shadow-Entrada"></span>
+				</div>
+
+				<div class="wrap-Entrada validate-input" data-validate = "Message is required">
+					<textarea class="Entrada" name="description" placeholder="Descripcion"></textarea>
+					<span class="shadow-Entrada"></span>
+				</div>
+
+				<div class="container-Reporte-form-btn">
+					<button class="Reporte-form-btn">
+						<span>
+							Enviar
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>	
+</body>
+</html>

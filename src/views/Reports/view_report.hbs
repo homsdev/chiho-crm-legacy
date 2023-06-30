@@ -1,0 +1,36 @@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Incidente
+            </th>
+            <th>
+                Estatus
+            </th>
+            <th>
+                Fecha
+            </th>
+            <th>
+                Descripcion
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each Reports}}
+        <tr>
+            <td>
+                {{incident}}
+            </td>
+            <td>
+                {{status}}
+            </td>
+            <td>
+                {{created_at}}
+            </td>
+            <td>
+                {{description}}
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
